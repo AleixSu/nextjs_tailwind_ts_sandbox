@@ -3,10 +3,19 @@ import React from 'react'
 
 const Nav = () => {
   return (
-    <nav className='  h-25 w-full flex px-2 md:px-5'>
-      <div className='w-50 h-full relative p-2'>
+    <nav className='  h-25 w-full flex px-2 md:px-15'>
+      <div className='w-50 h-full relative p-2 hidden sm:block '>
         <Image
           src='/images/logo.png'
+          alt='Logo'
+          fill
+          priority
+          className='object-contain'
+        />
+      </div>
+      <div className='w-8 h-full relative p-2 sm:hidden block'>
+        <Image
+          src='/images/smallLogo1.png'
           alt='Logo'
           fill
           priority
