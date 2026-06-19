@@ -1,15 +1,16 @@
-import React from 'react'
-import Nav from '../Components/Layout/Nav/Nav'
 import Image from 'next/image'
+import heroImg from '@/public/images/hero.png'
+import layersImg from '@/public/images/capas.png'
+import worldImg from '@/public/images/world.png'
+import flagImg from '@/public/images/flag.png'
 
 const page = () => {
   return (
-    <section className='w-[85%] mx-auto '>
-      <Nav />
+    <section className='w-[85%] mx-auto py-30'>
       <article className='md:mx-30 md:flex md:gap-25'>
-        <div class='m-auto aspect-square rounded-md relative md:w-[50%] md:m-0 '>
+        <div className='m-auto aspect-square rounded-md relative md:w-[50%] md:m-0 '>
           <Image
-            src='/images/hero.png'
+            src={heroImg}
             alt='3D printing models img'
             fill
             priority
@@ -42,7 +43,7 @@ const page = () => {
           <div className='relative flex  gap-2 items-center'>
             <div className='relative h-8 w-8'>
               <Image
-                src='/images/capas.png'
+                src={layersImg}
                 alt='Layers icon'
                 fill
                 className='object-contain'
@@ -61,7 +62,7 @@ const page = () => {
           <div className='relative flex  gap-2 items-center'>
             <div className='relative  h-8 w-8'>
               <Image
-                src='/images/world.png'
+                src={worldImg}
                 alt='world icon'
                 fill
                 className='object-contain'
@@ -80,7 +81,7 @@ const page = () => {
           <div className='relative flex  gap-2 items-center'>
             <div className='relative  h-8 w-8'>
               <Image
-                src='/images/flag.png'
+                src={flagImg}
                 alt='Flag Icon'
                 fill
                 className='object-contain'

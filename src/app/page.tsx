@@ -1,13 +1,14 @@
 import React from 'react'
-import Nav from './Components/Layout/Nav/Nav'
 import Hero from './Components/Layout/main/Hero'
 
 const page = () => {
   return (
-    <div id='app'>
-      <Nav />
+    <main
+      id='app'
+      className='min-h-screen flex items-center justify-center bg-slate-50'
+    >
       <Hero />
-    </div>
+    </main>
   )
 }
 

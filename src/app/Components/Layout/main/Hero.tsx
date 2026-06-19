@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import heroImg from '@/public/images/hero.png'
 
 const Hero = () => {
   return (
-    <section className=' h-[calc(100dvh-64px)] px-5 md:px-20 py-8 flex flex-col md:flex-row justify-between items-center gap-10 w-full overflow-hidden'>
+    <section className='px-5 md:px-20 py-5 flex flex-col md:flex-row justify-between items-center gap-10 w-full overflow-hidden'>
       <article className='flex-1 flex flex-col gap-10 w-full justify-center'>
         <div className='flex flex-col gap-5'>
           <h4 className='hidden sm:block text-slate-500 font-semibold tracking-wider text-sm'>
@@ -26,7 +27,7 @@ const Hero = () => {
       <article className='flex-1 flex justify-center items-center w-full h-full max-h-[80%] md:max-h-full'>
         <div className='relative w-full max-w-[320px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[550px] xl:max-w-[650px] aspect-square overflow-hidden rounded-full z-0 shadow-sm max-h-full'>
           <Image
-            src='/images/hero.png'
+            src={heroImg}
             alt='3D printing models background'
             fill
             priority

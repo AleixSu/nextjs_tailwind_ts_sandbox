@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { albertSans, montserratAlternates } from './Components/UXUI/Fonts/Fonts'
+import Nav from './Components/Layout/Nav/Nav'
 
 export const metadata: Metadata = {
   title: 'Mi Aplicación',
@@ -14,10 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='es'>
-      {/* Inyectamos ambas variables en el body */}
       <body
         className={`${albertSans.variable} ${montserratAlternates.variable} antialiased`}
       >
+        <header>
+          <Nav />
+        </header>
         {children}
       </body>
     </html>
