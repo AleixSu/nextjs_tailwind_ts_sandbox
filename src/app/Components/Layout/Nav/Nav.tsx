@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import React from 'react'
 import Link from 'next/link'
+import type { JSX } from 'react'
 
-const Nav = () => {
+const Nav = (): JSX.Element => {
   return (
     <nav className='  h-25 w-full flex px-2 md:px-15 fixed bg-slate-100 z-5'>
       <div className='w-50 h-full relative p-2 hidden sm:block '>
@@ -30,7 +30,7 @@ const Nav = () => {
       <div className='w-full flex justify-end px-2 '>
         <ul className='font-semibold flex px-2 items-center md:px-5 gap-3 text-xs md:gap-10 md:text-base '>
           <li>
-            <Link href='/'>
+            <Link href='/3d-models'>
               <button className='cursor-pointer hover:text-slate-400 transition-colors duration-200'>
                 3D MODELS
               </button>{' '}

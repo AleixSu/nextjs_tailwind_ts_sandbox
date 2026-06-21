@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import heroImg from '@/public/images/hero.png'
+import Link from 'next/link'
+import type { JSX } from 'react'
 
-const Hero = () => {
+const Hero = (): JSX.Element => {
   return (
     <section className='px-5 md:px-20 py-5 flex flex-col md:flex-row justify-between items-center gap-10 w-full overflow-hidden'>
       <article className='flex-1 flex flex-col gap-10 w-full justify-center'>
@@ -18,9 +20,12 @@ const Hero = () => {
           </h2>
         </div>
         <div>
-          <button className='p-3 border-2 border-solid border-slate-900 font-bold cursor-pointer text-sm tracking-wider hover:bg-slate-900 hover:text-white transition-colors duration-200'>
-            BROWSE MODELS
-          </button>
+          <Link href='/3d-models'>
+            {' '}
+            <button className='p-3 border-2 border-solid border-slate-900 font-bold cursor-pointer text-sm tracking-wider hover:bg-slate-900 hover:text-white transition-colors duration-200'>
+              BROWSE MODELS
+            </button>
+          </Link>
         </div>
       </article>
 

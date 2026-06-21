@@ -3,8 +3,9 @@ import heroImg from '@/public/images/hero.png'
 import layersImg from '@/public/images/capas.png'
 import worldImg from '@/public/images/world.png'
 import flagImg from '@/public/images/flag.png'
+import type { JSX } from 'react'
 
-const page = () => {
+const page = (): JSX.Element => {
   return (
     <section className='w-[85%] mx-auto py-30'>
       <article className='md:mx-30 md:flex md:gap-25'>
